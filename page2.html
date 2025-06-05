@@ -2,12 +2,24 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Surpresa ❤️</title>
-    <link rel="stylesheet" href="src/CSS/Style2.css">
-    <script src="src/JS/script2.js" defer></script>
+    <title>Jogo da Memória ❤️</title>
+    <link rel="stylesheet" href="src/css/pagina2.css">
 </head>
 <body>
-    <h1>Te amo! ❤️🌹</h1>
-    <p>Essa é a próxima surpresa...</p>
+    <h1>Jogo da Memória ❤️</h1>
+    <p>Encontre todos os pares para revelar a surpresa!</p>
+
+    <button id="toggleMusic">Pausar Música</button>
+
+    <div class="memory-game"></div>
+
+    <div id="finalMessage" class="hidden">
+        <h2>Parabéns! Você completou o jogo! 🎉</h2>
+        <a href="pagina3.html"><button>Ir para a próxima surpresa ❤️</button></a>
+    </div>
+
+    <audio id="musica" src="src/audio/musica.mp3" autoplay loop></audio>
+
+    <script src="src/js/pagina2.js" defer></script>
 </body>
 </html>

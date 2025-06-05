@@ -1,0 +1,63 @@
+body {
+    background: #ffe6e6;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.memory-game {
+    width: 600px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+#finalMessage {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffb6c1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
