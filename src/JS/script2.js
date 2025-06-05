@@ -81,14 +81,3 @@ function initGame() {
 }
 
 initGame();
-
-// Controle de música
-toggleMusicBtn.addEventListener('click', () => {
-    if (musica.paused) {
-        musica.play();
-        toggleMusicBtn.textContent = 'Pausar Música';
-    } else {
-        musica.pause();
-        toggleMusicBtn.textContent = 'Tocar Música';
-    }
-});

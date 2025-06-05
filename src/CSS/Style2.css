@@ -1,63 +1,62 @@
 body {
-    background: #ffe6e6;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #121212; /* Fundo bem escuro */
+    color: #f0f0f0; /* Texto claro */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff7f50; /* Coral bonito */
 }
 
 .memory-game {
-    width: 600px;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-gap: 10px;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
 }
 
-.card {
-    width: 100px;
-    height: 100px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+.memory-card {
+    width: 150px;
+    height: 150px;
+    background-color: #1f1f1f; /* Cartas mais claras que o fundo */
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    font-size: 2em;
     cursor: pointer;
-    user-select: none;
-    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-}
-
-.card.flipped img {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-#finalMessage {
-    margin-top: 20px;
+.memory-card.flipped {
+    background-color: #ff7f50; /* Coral quando virada */
+    transform: rotateY(180deg);
 }
 
 button {
     margin-top: 20px;
     padding: 10px 20px;
-    background: #ffb6c1;
+    font-size: 1em;
+    background-color: #ff7f50;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5722;
 }
