@@ -11,8 +11,6 @@ const images = [
 
 const gameContainer = document.querySelector('.memory-game');
 const finalMessage = document.getElementById('finalMessage');
-const musica = document.getElementById('musica');
-const toggleMusicBtn = document.getElementById('toggleMusic');
 
 let flippedCards = [];
 let lockBoard = false;
