@@ -46,6 +46,7 @@ h1 {
 }
 
 button {
+    margin: 20px auto 0 auto;
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1em;
