@@ -1,12 +1,12 @@
 const images = [
-    'src/img/img1.png',
-    'src/img/img2.png',
-    'src/img/img3.png',
-    'src/img/img4.png',
-    'src/img/img5.png',
-    'src/img/img6.png',
-    'src/img/img7.png',
-    'src/img/img8.png'
+    'src/imgs/img1.jpeg',
+    'src/imgs/img2.jpeg',
+    'src/imgs/img3.jpeg',
+    'src/imgs/img4.jpeg',
+    'src/imgs/img5.jpeg',
+    'src/imgs/img6.jpeg',
+    'src/imgs/img7.jpeg',
+    'src/imgs/img8.jpeg',
 ];
 
 const gameContainer = document.querySelector('.memory-game');
