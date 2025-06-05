@@ -22,19 +22,30 @@ function shuffle(array) {
 
 function createCard(imgSrc) {
     const card = document.createElement('div');
-    card.classList.add('card');
+    card.classList.add('memory-card');
     card.dataset.img = imgSrc;
+
+    const cardInner = document.createElement('div');
+    cardInner.classList.add('card-inner');
+
+    const cardFront = document.createElement('div');
+    cardFront.classList.add('card-front');
+
+    const cardBack = document.createElement('div');
+    cardBack.classList.add('card-back');
 
     const img = document.createElement('img');
     img.src = imgSrc;
+    cardBack.appendChild(img);
 
-    card.appendChild(img);
+    cardInner.appendChild(cardFront);
+    cardInner.appendChild(cardBack);
+    card.appendChild(cardInner);
 
     card.addEventListener('click', () => {
         if (lockBoard || card.classList.contains('flipped')) return;
 
         card.classList.add('flipped');
-
         flippedCards.push(card);
 
         if (flippedCards.length === 2) {
@@ -69,7 +80,7 @@ function checkForMatch() {
 }
 
 function initGame() {
-    const duplicatedImages = [...images, ...images]; 
+    const duplicatedImages = [...images, ...images];
     const shuffled = shuffle(duplicatedImages);
 
     shuffled.forEach(imgSrc => {
