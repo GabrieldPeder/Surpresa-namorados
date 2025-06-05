@@ -46,7 +46,6 @@ h1 {
 }
 
 button {
-    margin: 20px auto 0 auto;
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1em;
@@ -56,6 +55,8 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
 }
 
 button:hover {
