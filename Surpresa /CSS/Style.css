@@ -1,0 +1,46 @@
+body {
+  background: #131b21;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #1e2a33;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  color: #ff69b4;
+}
+
+p {
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+
+svg {
+  margin: 20px 0;
+  transition: transform 0.3s;
+}
+
+svg:hover {
+  transform: scale(1.1);
+}
+
+.assinatura {
+  margin-top: 20px;
+  font-style: italic;
+  color: #ffa6c9;
+}
