@@ -23,7 +23,7 @@ function type() {
   if (i < text.length) {
     typewriter.innerHTML += text.charAt(i);
     i++;
-    setTimeout(type, 50);
+    setTimeout(type, 100);
   } else {
     playButtonContainer.style.display = "block";
   }
