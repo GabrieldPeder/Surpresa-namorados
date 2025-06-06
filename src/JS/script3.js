@@ -12,10 +12,6 @@ Feliz Dia dos Namorados, minha vida.
 Obrigado por existir. 💖`;
 
 const typewriter = document.getElementById("typewriter");
-const playButtonContainer = document.getElementById("playButtonContainer");
-const videoContainer = document.getElementById("videoContainer");
-const video = document.getElementById("romanticVideo");
-const playVideoBtn = document.getElementById("playVideoBtn");
 
 let i = 0;
 
@@ -24,16 +20,7 @@ function type() {
     typewriter.innerHTML += text.charAt(i);
     i++;
     setTimeout(type, 25);
-  } else {
-    playButtonContainer.style.display = "block";
   }
 }
-
-playVideoBtn.addEventListener("click", () => {
-  typewriter.style.display = "none";
-  playButtonContainer.style.display = "none";
-  videoContainer.style.display = "block";
-  video.play();
-});
 
 window.onload = type;
