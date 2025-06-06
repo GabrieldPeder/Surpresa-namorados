@@ -21,7 +21,7 @@ body {
 #typewriter {
   font-size: 1.8rem;
   white-space: pre-line;
-  color: rgb(210, 210, 210) ;
+  color: rgb(156, 156, 156) ;
   text-shadow: 1px 1px 2px white;
 }
 
@@ -75,12 +75,12 @@ video {
   background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
   opacity: 0.3;
   animation-duration: 160s;
-}
+}*/
 #stars3 {
   background-image: url("https://www.transparenttextures.com/patterns/tiny-grid.png");
   opacity: 0.2;
   animation-duration: 240s;
-}*/
+}
 
 @keyframes moveStars {
   from { transform: translate(0, 0); }
