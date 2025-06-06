@@ -54,7 +54,7 @@ video {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
 
-/* Star animation atualizada */
+/* Star animation corrigida */
 #stars, #stars2, #stars3 {
   position: fixed;
   top: 0;
@@ -63,32 +63,37 @@ video {
   height: 100%;
   background-repeat: repeat;
   z-index: 0;
-  animation: moveStars 100s linear infinite;
   background-attachment: fixed;
+  animation: animateStars 100s linear infinite;
 }
 
 /* Camada 1 */
 #stars {
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
   opacity: 0.5;
-  animation-duration: 100s;
+  animation: animateStars 100s linear infinite;
 }
 
-/* Camada 2 */
-/*#stars2 {
+/* Camada 2 
+#stars2 {
   background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
   opacity: 0.3;
-  animation-duration: 200s;
+  animation: animateStars 160s linear infinite;
 }*/
 
 /* Camada 3 */
 #stars3 {
   background-image: url("https://www.transparenttextures.com/patterns/tiny-grid.png");
   opacity: 0.2;
-  animation-duration: 300s;
+  animation: animateStars 240s linear infinite;
 }
 
-@keyframes moveStars {
-  from { transform: translate(0, 0); }
-  to { transform: translate(-5000px, -5000px); }
+@keyframes animateStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1000px -1000px;
+  }
 }
+
