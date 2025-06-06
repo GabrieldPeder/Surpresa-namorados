@@ -21,7 +21,7 @@ body {
 #typewriter {
   font-size: 1.8rem;
   white-space: pre-line;
-  color: black;
+  color: rgb(210, 210, 210) ;
   text-shadow: 1px 1px 2px white;
 }
 
